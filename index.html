@@ -1,1 +1,640 @@
-<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=captura-aulas-gratuitas.html"></head><body></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas Gratuitas — Confinamento na Prática | NaFazenda</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '974617600838066');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=974617600838066&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-base: #070b07;
+    --bg-card: #0e120d;
+    --bg-form: #111810;
+    --green: #82c63d;
+    --green-bright: #6bc805;
+    --green-dark: #025322;
+    --text: #e8edd8;
+    --text-muted: #8a9477;
+    --border: #1e2a1a;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-label: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-header .logo {
+    font-family: var(--font-display);
+    font-size: 28px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .site-header .logo span { color: var(--green); }
+
+  /* ── EYEBROW ── */
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--font-label);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    border: 1px solid var(--green-dark);
+    background: rgba(130,198,61,0.07);
+    padding: 5px 14px;
+    border-radius: 2px;
+  }
+
+  /* ── HERO SPLIT ── */
+  .hero-split {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 24px 64px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 64px;
+    align-items: center;
+  }
+
+  /* LEFT */
+  .hero-content .eyebrow { margin-bottom: 24px; }
+
+  .hero-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.02;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+  .hero-content h1 em {
+    font-style: normal;
+    color: var(--green);
+  }
+
+  .hero-content .lead {
+    font-size: 18px;
+    color: #b4bf9e;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+
+  .hero-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .hero-bullet {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 3px;
+  }
+  .bullet-icon {
+    color: var(--green);
+    font-size: 22px;
+    line-height: 1.3;
+    flex-shrink: 0;
+  }
+  .hero-bullet strong {
+    display: block;
+    font-family: var(--font-label);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 4px;
+  }
+  .hero-bullet p {
+    font-size: 15px;
+    color: #c8d4b0;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* RIGHT */
+  .hero-form-col { width: 100%; }
+
+  .form-card-title {
+    font-size: 15px;
+    color: #b4bf9e;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .hero-split {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 48px 20px;
+    }
+    .hero-form-col { max-width: 480px; }
+  }
+
+  /* ── FORM CARD ── */
+  .form-card {
+    background: var(--bg-form);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px 36px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-card label {
+    display: block;
+    font-family: var(--font-label);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .form-card input {
+    display: block;
+    width: 100%;
+    background: #0a0f0a;
+    border: 1px solid #2a3824;
+    border-radius: 3px;
+    padding: 13px 16px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+  }
+  .form-card input:focus { border-color: var(--green); }
+  .form-card input::placeholder { color: #3d4d33; }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+    background: var(--green);
+    color: #040804;
+    font-family: var(--font-label);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    padding: 17px 24px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 4px;
+  }
+  .btn-primary:hover { background: var(--green-bright); transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .form-trust {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.5;
+  }
+  .form-trust svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-top: -2px;
+  }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 24px;
+  }
+
+  .section-narrow {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 72px 24px;
+  }
+
+  /* ── PROBLEM SECTION ── */
+  .problem-intro h2 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+  }
+  .problem-intro p {
+    color: #b4bf9e;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .problem-list {
+    margin-top: 32px;
+    padding: 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 3px;
+  }
+  .problem-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px 32px;
+  }
+  .problem-list li {
+    font-size: 16px;
+    color: #c8d4b0;
+    padding-left: 20px;
+    position: relative;
+  }
+  .problem-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  /* ── LESSONS ── */
+  .lessons-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .lessons-header h2 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 56px);
+    letter-spacing: 0.02em;
+    margin-top: 16px;
+  }
+
+  .lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  .lesson-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 36px 32px;
+    position: relative;
+  }
+  .lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--green);
+    border-radius: 4px 4px 0 0;
+  }
+
+  .lesson-num {
+    font-family: var(--font-label);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 12px;
+  }
+
+  .lesson-card h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .lesson-card .lesson-lead {
+    color: #8a9477;
+    font-size: 15px;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+
+  .lesson-card ul {
+    list-style: none;
+  }
+  .lesson-card li {
+    font-size: 15px;
+    color: #c8d4b0;
+    padding: 8px 0 8px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .lesson-card li:last-child { border-bottom: none; }
+  .lesson-card li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* ── CLOSE CTA ── */
+  .close-cta {
+    text-align: center;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 80px 24px;
+  }
+  .close-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.05;
+    max-width: 700px;
+    margin: 0 auto 16px;
+    letter-spacing: 0.02em;
+  }
+  .close-cta p {
+    color: #b4bf9e;
+    font-size: 18px;
+    max-width: 560px;
+    margin: 0 auto 48px;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .form-card { padding: 28px 20px; }
+    .section { padding: 56px 20px; }
+    .section-narrow { padding: 56px 20px; }
+    .lesson-card { padding: 28px 24px; }
+    .problem-list { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://nafazenda.com/" style="display:inline-flex;align-items:center;"><img src="data:image/webp;base64,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" alt="NaFazenda.com" style="height:36px;width:auto;display:block;"></a>
+</header>
+
+<!-- HERO -->
+<section class="hero-split">
+  <!-- LEFT: content -->
+  <div class="hero-content">
+    <span class="eyebrow">Acesso Gratuito</span>
+    <h1>Assista gratuitamente a <em>2 aulas</em> do curso Confinamento na Prática</h1>
+    <p class="lead">Descubra como erros na nutrição, na avaliação dos ingredientes e na execução da operação podem comprometer o GMD, aumentar os riscos de acidose e reduzir a margem do confinamento.</p>
+
+    <div class="hero-bullets">
+      <div class="hero-bullet">
+        <span class="bullet-icon">›</span>
+        <div>
+          <strong>Aula 1</strong>
+          <p>Acidose ruminal: como o problema começa e se transforma em um ciclo dentro da operação</p>
+        </div>
+      </div>
+      <div class="hero-bullet">
+        <span class="bullet-icon">›</span>
+        <div>
+          <strong>Aula 2</strong>
+          <p>Por que conhecer apenas os níveis de PB e NDT dos ingredientes não é suficiente</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: form -->
+  <div class="hero-form-col">
+    <div class="form-card">
+      <p class="form-card-title">Preencha seus dados para liberar o acesso imediato às duas aulas.</p>
+      <form id="capture-form" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required autocomplete="tel">
+
+        <button type="submit" class="btn-primary">Quero Acessar as Aulas Gratuitas</button>
+      </form>
+      <p class="form-trust">
+        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="9" height="7" rx="1" stroke="#8a9477" stroke-width="1.2"/><path d="M4 6V4.5a2.5 2.5 0 0 1 5 0V6" stroke="#8a9477" stroke-width="1.2"/></svg>
+        Seus dados estão seguros. Você receberá informações relacionadas às aulas e aos conteúdos do Confinamento na Prática.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- PROBLEM -->
+<div class="section-narrow problem-intro">
+  <h2>Formular a dieta é importante. Mas não é suficiente.</h2>
+  <p>Muitos problemas de desempenho não começam necessariamente em uma formulação errada.</p>
+  <p>Eles podem surgir na avaliação inadequada dos ingredientes, na correção incorreta da matéria seca, na distribuição da dieta, no manejo de cocho ou na falta de conexão entre a nutrição e a rotina operacional.</p>
+  <p>O resultado pode aparecer na forma de:</p>
+
+  <div class="problem-list">
+    <ul>
+      <li>Oscilações no consumo</li>
+      <li>Queda no ganho médio diário</li>
+      <li>Maior risco de acidose ruminal</li>
+      <li>Problemas durante ou depois da adaptação</li>
+      <li>Perda de eficiência alimentar</li>
+      <li>Redução da margem da operação</li>
+    </ul>
+  </div>
+
+  <p style="margin-top: 28px; color: #b4bf9e; font-size:18px;">Nessas duas aulas selecionadas do curso Confinamento na Prática, você entenderá pontos que precisam ser observados para evitar que pequenos erros se transformem em grandes prejuízos.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- LESSONS -->
+<div class="section">
+  <div class="lessons-header">
+    <span class="eyebrow">Conteúdo das Aulas</span>
+    <h2>O que você aprenderá nas aulas</h2>
+  </div>
+
+  <div class="lessons-grid">
+    <div class="lesson-card">
+      <div class="lesson-num">Aula 1</div>
+      <h3>Acidose ruminal: como o problema começa e se transforma em um ciclo dentro da operação</h3>
+      <p class="lesson-lead">A acidose não acontece somente durante a adaptação. Ela também pode surgir no decorrer do confinamento, afetando o consumo, o desempenho dos animais e os resultados da operação.</p>
+      <p style="font-size:14px; color:var(--text-muted); margin-bottom: 16px; font-family: var(--font-label); font-weight:700; letter-spacing:0.08em; text-transform:uppercase;">Nesta aula, você compreenderá:</p>
+      <ul>
+        <li>O que é a acidose ruminal</li>
+        <li>Por que ela pode acontecer no meio do confinamento</li>
+        <li>Como o problema pode se tornar um ciclo vicioso</li>
+        <li>A relação entre nutrição, consumo e GMD</li>
+        <li>Por que os sinais precisam ser identificados rapidamente</li>
+      </ul>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-num">Aula 2</div>
+      <h3>Por que conhecer apenas os níveis de PB e NDT dos ingredientes não é suficiente</h3>
+      <p class="lesson-lead">Não basta formular uma dieta no papel. É necessário conhecer os ingredientes utilizados, avaliar suas características e entender como eles se comportam dentro da realidade da operação.</p>
+      <p style="font-size:14px; color:var(--text-muted); margin-bottom: 16px; font-family: var(--font-label); font-weight:700; letter-spacing:0.08em; text-transform:uppercase;">Nesta aula, você descobrirá:</p>
+      <ul>
+        <li>Por que a formulação é apenas uma das variáveis ligadas ao GMD</li>
+        <li>O que precisa ser observado na avaliação dos ingredientes</li>
+        <li>Os riscos de analisar um ingrediente somente pela PB e pelo NDT</li>
+        <li>Como erros relacionados à matéria seca podem afetar a dieta</li>
+        <li>O que diferencia uma operação eficiente de uma operação que perde dinheiro</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- CLOSE CTA -->
+<div class="close-cta">
+  <h2>O desempenho é construído todos os dias, dentro da operação</h2>
+  <p>Duas propriedades podem trabalhar com dietas semelhantes e apresentar resultados completamente diferentes. O resultado não depende apenas do que foi formulado — depende da leitura de cocho, da qualidade dos ingredientes, da regularidade da mistura, dos horários, da distribuição e do monitoramento dos indicadores.</p>
+
+  <div class="form-card" style="text-align:left; max-width: 480px; margin: 0 auto;">
+    <form id="capture-form-2" novalidate>
+      <label for="nome2">Nome</label>
+      <input type="text" id="nome2" name="nome" placeholder="Seu nome completo" required autocomplete="name">
+
+      <label for="email2">E-mail</label>
+      <input type="email" id="email2" name="email" placeholder="seu@email.com" required autocomplete="email">
+
+      <label for="whatsapp2">WhatsApp</label>
+      <input type="tel" id="whatsapp2" name="whatsapp" placeholder="(00) 00000-0000" required autocomplete="tel">
+
+      <button type="submit" class="btn-primary">Liberar Meu Acesso Gratuito</button>
+    </form>
+    <p class="form-trust">
+      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="9" height="7" rx="1" stroke="#8a9477" stroke-width="1.2"/><path d="M4 6V4.5a2.5 2.5 0 0 1 5 0V6" stroke="#8a9477" stroke-width="1.2"/></svg>
+      Seus dados estão seguros.
+    </p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  &copy; 2025 NaFazenda.com — Todos os direitos reservados
+</footer>
+
+<script>
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const nome = form.querySelector('[name="nome"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const whatsapp = form.querySelector('[name="whatsapp"]').value.trim();
+
+    if (!nome || !email || !whatsapp) {
+      alert('Por favor, preencha todos os campos para liberar o acesso.');
+      return;
+    }
+
+    // Fire Meta Pixel lead event
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', { content_name: 'Aulas Gratuitas CNP' });
+    }
+
+    // Fire n8n webhook (non-blocking)
+    fetch('https://n8n.lacodigital.com.br/webhook/lead-nafazenda', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome, email, whatsapp, origem: 'aulas-gratuitas-captura' })
+    }).catch(() => {});
+
+    // Redirect to aulas page with params
+    const params = new URLSearchParams({ nome, email, whatsapp });
+    window.location.href = 'https://aulas-gratuitas.nafazenda.com/aulas-gratuitas.html?' + params.toString();
+  }
+
+
+  // Máscara WhatsApp
+  function applyWhatsAppMask(input) {
+    input.addEventListener('input', function() {
+      let v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+      else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+      else if (v.length > 0) v = '(' + v;
+      this.value = v;
+    });
+  }
+
+  document.getElementById('capture-form').addEventListener('submit', handleFormSubmit);
+  document.getElementById('capture-form-2').addEventListener('submit', handleFormSubmit);
+
+  // Apply mask to all whatsapp inputs
+  document.querySelectorAll('[name="whatsapp"]').forEach(applyWhatsAppMask);
+</script>
+</body>
+</html>
